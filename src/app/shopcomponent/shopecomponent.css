@@ -1,0 +1,221 @@
+/* Container Geral da Loja */
+.shop-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* --- ESTILO DA BARRA DE PESQUISA (IGUAL À FOTO) --- */
+.search-container {
+  margin-left: 40%;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Container do Input + Botão juntos */
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px; /* Cantos arredondados externos */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra idêntica à da foto */
+  overflow: hidden; /* Mantém o botão recortado na borda arredondada */
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Campo de Texto */
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #0c0b0b;
+  background: transparent;
+}
+
+.search-input::placeholder {
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+/* Botão Azul com o Ícone */
+.search-btn {
+  background-color: #2196f3; /* Azul vibrante igual ao da foto */
+  border: none;
+  color: white;
+  padding: 0 18px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-btn:hover {
+  background-color: #1e88e5; /* Tom um pouco mais escuro no hover */
+}
+
+/* --- FIM DO ESTILO DA PESQUISA --- */
+
+/* Título */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin: 40px 0;
+}
+
+/* Grid de Produtos */
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Card do Produto */
+.produto-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.produto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagem do Produto */
+.foto-container {
+  width: 100%;
+  height: 200px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produto-foto {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Informações do Produto */
+.produto-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.produto-titulo {
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+  color: #333;
+  line-height: 1.3;
+}
+
+.preco {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2e7d32; /* Verde elegante para o preço */
+  margin: 0;
+}
+
+
+
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Caixa de pesquisa estilizada */
+.search-input {
+  width: 100%;
+  max-width: 450px;
+  height: 42px;
+  padding: 0 50px 0 15px; /* Espaço na direita para não digitar em cima do ícone */
+  border-radius: 8px; /* Bordas arredondadas */
+  border: 1px solid #030101 /* Borda cinza suave */
+  background-color #ffffff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12); /* Sombra 3D suave */
+  font-size: 14px;
+  color: #333333;
+  outline: none; /* Remove a borda preta padrão ao clicar */
+  transition: all 0.2s ease-in-out;
+
+
+  /* Adiciona o bloco azul com a lupa na direita via CSS */
+  background-image: 
+  /* Lupa SVG branca */
+  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'),
+  /* Quadrado azul do fundo da lupa */
+  linear-gradient(#ffffff, #ffffff);
+  
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(100% - 13px) center, right center; /* Posiciona no lado direito */
+  background-size: 18px 18px, 44px 100%; /* Tamanho da lupa e largura do bloco azul */
+
+
+/* Efeito ao clicar no campo de texto */
+.search-input:focus {
+  border-color: #1a83ff;
+  box-shadow: 0 4px 12px rgba(26, 131, 255, 0.25);
+}
+
+/* Cor do texto de dica (placeholder) */
+.search-input::placeholder {
+  color: #0b0505;
+}
+
+
+  /* Estilo do Botão COMPRAR */
+  .btn-comprar {
+    width: 100%;
+    background-color: #1e7e34; /* Verde escuro idêntico ao da imagem */
+    color: #ffffff;            /* Texto branco */
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase; /* Garante letras maiúsculas */
+    letter-spacing: 0.5px;
+    
+    padding: 8px 0;
+    border: none;
+    border-radius: 3px;        /* Bordas levemente arredondadas */
+    cursor: pointer;
+    
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  /* Efeito ao passar o mouse por cima (Hover) */
+  .btn-comprar:hover {
+    background-color: #145a23; /* Tom ligeiramente mais escuro */
+  }
+
+  /* Efeito ao clicar no botão */
+  .btn-comprar:active {
+    transform: scale(0.98);
+  }}

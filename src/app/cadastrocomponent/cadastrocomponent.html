@@ -1,0 +1,43 @@
+
+
+<div class="input-group">
+  <label>Nome Complete</label>
+  <input type="text" [(ngModel)]="novoContato.nome" name="nome" placeholder="Nome Completo">
+</div>
+
+<div class="input-group">
+  <label>CPF</label>
+  <input type="text" [(ngModel)]="novoContato.cpf" name="cpf" placeholder="000.000.000-00">
+</div>
+
+<div class="input-group">
+  <label>Telefone</label>
+  <input type="text" [(ngModel)]="novoContato.telefone" name="telefone" placeholder="(00) 00000-0000">
+</div>
+
+<div class="input-group">
+  <label>E-MAIL</label>
+  <input type="email" [(ngModel)]="novoContato.email" name="email" placeholder="Seu email">
+</div>
+
+
+
+<div class ="input-group">
+    <label>login</label>
+  <input type="text" [(ngModel)]="novoContato.login" name = "login" placeholder="crie um login">
+</div>
+
+  <div class="input-group">
+  <label>senha</label>
+  <input type="password" [(ngModel)]="novoContato.senha" name ="senha" placeholder="crie uma senha"></div>
+
+  
+<button routerLink="/header">Voltar</button>
+
+<button routerLink="/header">Voltar</button>
+<button (click)="salvarNoSupabase()">Cadastrar</button>
+
+
+
+  
+

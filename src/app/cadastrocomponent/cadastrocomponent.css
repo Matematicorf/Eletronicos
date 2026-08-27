@@ -1,0 +1,140 @@
+/* ==========================================================================
+   CONFIGURAÇÃO GLOBAL E TIPOGRAFIA
+   ========================================================================== */
+:host {
+  display: block;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f6; /* Um fundo cinza claro e moderno, ideal para sistemas */
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Título Principal do Sistema */
+h1, .sistema-titulo {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 24pt;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* ==========================================================================
+   CARD DO FORMULÁRIO (CONTAINER)
+   ========================================================================== */
+.form-container {
+  background-color: #ffffff;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 35px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra suave para dar profundidade */
+}
+
+
+
+/* ==========================================================================
+   CAMPOS DE ENTRADA (INPUT GROUPS)
+   ========================================================================== */
+.input-group {
+  margin-bottom: 5px;
+  display: block; /* Garante comportamento de bloco limpo */
+}
+
+/* Labels elegantes posicionadas acima do input */
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #0d0e0d;
+  font-size: 10pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: 625px;
+  transform: translate(3%);
+
+  
+}
+
+/* Inputs padronizados e responsivos */
+.input-group input {
+  width: 12%;
+  padding: 10px 14px;
+  font-size: 11pt;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;   
+  color: #2c3e50;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box; /* Crucial para o padding não quebrar a largura */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Efeito de foco amigável nos inputs */
+.input-group input:focus {
+  border-color: #3498db; /* Azul suave moderno */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+  outline: none;
+}
+
+/* Placeholder discreto */
+.input-group input::placeholder {
+  color: #bdc3c7;
+}
+
+/* ==========================================================================
+   BOTÕES E AÇÕES
+   ========================================================================== */
+.action-group {
+  margin-top: 30px;
+  display: block;
+}
+
+/* Botão Cadastrar (Principal) */
+button {
+  width: 12%;
+  background-color: #010a06; /* Verde moderno para sucesso/cadastro */
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 12pt;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(14, 16, 15, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   transform: translateY(29px)
+  
+}
+
+button:hover {
+  background-color: #3a423d;
+}
+
+button:active {
+  background-color: #343635;
+}
+
+/* Botão / Link Voltar (Secundário) */
+a {
+  display: block;  
+  text-align: center;
+  color: #95a5a6;
+  text-decoration: none;
+  font-size: 119999pt;
+  padding: 100px;
+  border-radius: 5px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+a:hover {
+  color: #7f8c8d;
+  background-color: #f8f9fa;
+}

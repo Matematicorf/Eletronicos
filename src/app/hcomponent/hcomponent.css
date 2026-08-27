@@ -63,7 +63,7 @@ h2 {
 }
 
 .btn-entrar {
-  width: 100%;
+  width: 30%;
   background-color: #002cb3;
   color: white;
   border: none;
@@ -72,3 +72,12 @@ h2 {
   cursor: pointer;
   margin-top: 20px;
 }
+
+  .link {
+  display: inline-block; /* Permite alterar a largura mantendo o comportamento de link */
+  width: 260px;          /* Altere para o valor que você desejar (ex: 150px, 250px) */
+  text-align: center;    /* Centraliza o texto dentro do espaço do link */
+  padding: 10px;         /* Dá um respiro interno (opcional) */
+  text-decoration: none; /* Remove o sublinhado padrão (opcional) */
+}
+

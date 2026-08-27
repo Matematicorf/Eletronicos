@@ -1,2 +1,77 @@
-<h2>Página da Loja (Shop)</h2>
-<p>Se você está vendo isso, o roteamento funcionou!</p>
+<div class="shop-container">
+
+  <!-- BARRA DE PESQUISA -->
+  <div class="search-container">
+    <input 
+      type="text" 
+      placeholder="Buscar produto pelo nome..." 
+      [(ngModel)]="termoPesquisa" 
+      class="search-input"
+    />
+  </div>
+
+  <h2>Vitrine de Controles</h2>
+
+  <div *ngIf="carregando" class="loading">
+    Carregando produtos...
+  </div>
+
+  <!-- Alterado para iterar sobre produtosFiltrados -->
+  <div *ngIf="!carregando" class="produtos-grid">
+    <div *ngFor="let produto of produtosFiltrados" class="produto-card">
+      <div class="foto-container">
+        <img 
+          [src]="produto?.imagem_url ? produto.imagem_url : 'https://via.placeholder.com/200x300.png'" 
+          alt="{{ produto?.titulo }}" 
+          class="produto-foto"
+        />
+      </div>
+      <div class="produto-info">
+        <h3 class="produto-titulo">{{ produto.titulo }}</h3>
+        <p class="preco">R$ {{ produto.preco }}</p>
+         <button type="button" class="btn-comprar">COMPRAR</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Botão Comprar</title>
+  <style>
+    /* Estilo do Botão COMPRAR */
+    .btn-comprar {
+      width: 100%;
+      max-width: 200px; /* Limita a largura máxima para não esticar demais na tela */
+      background-color: #1e7e34;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 8px 0;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .btn-comprar:hover {
+      background-color: #145a23;
+    }
+
+    .btn-comprar:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Elemento HTML do botão -->
+
+
+</body>
+</html>

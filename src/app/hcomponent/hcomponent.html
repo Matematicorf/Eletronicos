@@ -1,27 +1,28 @@
-<div class="menu-botoes">
-  <button>ENTRAR</button>
-  <button>PRODUTOS E VENDAS</button>
-  <button>NÃO TENHO CADASTRO</button>
-</div>
-
 <div class="login-container">
   <div class="login-box">
     <h2>LOGIN</h2>
-    
+
     <div class="input-group">
       <label>E-MAIL</label>
-      <input type="email" placeholder="Seu email">
+      <input type="email" name="email" [(ngModel)]="dadosLogin.email" placeholder="Seu email">
     </div>
 
     <div class="input-group">
       <label>SENHA</label>
-      <input type="password" placeholder="Sua Senha">
+      <input type="password" name="senha" [(ngModel)]="dadosLogin.senha" placeholder="Sua Senha">
     </div>
 
     <div class="captcha-placeholder">
       <input type="checkbox" id="robot"> <label for="robot">Não sou um robô</label>
     </div>
 
-    <button class="btn-entrar">ENTRAR</button>
+    <button class="btn-entrar" (click)="fazerLogin()">ENTRA</button>
+
+    <a class="link" routerLink="/cadastro">cadastre se aqui</a>
+
+    
+ 
   </div>
 </div>
+
+
