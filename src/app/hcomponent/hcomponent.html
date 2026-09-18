@@ -1,27 +1,61 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <div class="login-container">
   <div class="login-box">
-    <h2>LOGIN</h2>
-
+    <h2>login</h2>
+    <!-- Grupo E-mail -->
     <div class="input-group">
-      <label>E-MAIL</label>
-      <input type="email" name="email" [(ngModel)]="dadosLogin.email" placeholder="Seu email">
+      <label for="email">E-MAIL</label>
+      <div class="input-wrapper">
+        <i class="fa-regular fa-user input-icon"></i>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          [(ngModel)]="dadosLogin.email" 
+          placeholder="digite seu e-mail" 
+          class="campo-email" 
+        />
+      </div>
     </div>
 
+    <!-- Grupo Senha -->
     <div class="input-group">
-      <label>SE</label>
-      <input type="password" name="senha" [(ngModel)]="dadosLogin.senha" placeholder="Sua Senha">
+      <label for="senha">SENHA</label>
+      <div class="input-wrapper">
+        <i class="fa-solid fa-lock input-icon"></i>
+        <input 
+          type="password" 
+          id="senha" 
+          name="senha" 
+          [(ngModel)]="dadosLogin.senha" 
+          placeholder="Sua Senha" 
+        />
+      </div>
     </div>
 
+    <!-- Caixa reCAPTCHA -->
     <div class="captcha-placeholder">
-      <input type="checkbox" id="robot"> <label for="robot">Não sou um robô</label>
+      <div class="captcha-checkbox">
+        <input type="checkbox" id="robot">
+        <label for="robot">I'm not a robot</label>
+      </div>
+
+      <div class="recaptcha-brand">
+        <i class="fa-solid fa-arrows-rotate"></i>
+        <span>reCAPTCHA</span>
+      </div>
     </div>
 
-    <button class="btn-entrar" (click)="fazerLogin()">EN</button>
+    <!-- Botão de Entrar -->
+    <button class="btn-entrar" (click)="fazerLogin()">ENTRAR</button>
 
-    <a class="link" routerLink="/cadastro">cadastre se aqui</a>
+    <!-- Texto do Cadastro -->
+    <p class="cadastro-texto">
+      Não tem uma conta?
+      <a class="link" routerLink="/cadastro">Cadastre-se aqui</a>
+    </p>
 
-    
- 
   </div>
 </div>
 

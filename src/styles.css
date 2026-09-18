@@ -1,0 +1,14 @@
+/* src/styles.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f2f2f2 !important;
+}
+
+/* Garante que as rotas carregadas não sobreponham o fundo com branco */
+app-root, main {
+  display: block;
+  min-height: 100vh;
+  background-color: #f2f2f2 !important;
+}
