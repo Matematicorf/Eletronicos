@@ -20,7 +20,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
-                "glob": "*/",
+                "glob": "/",
                 "input": "public"
               },
               "src/assets"
@@ -31,6 +31,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/Eletronicos/",
               "budgets": [
                 {
                   "type": "initial",

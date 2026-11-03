@@ -8,25 +8,32 @@ import { RouterModule } from '@angular/router';
   template: `
 <!-- Cabeçalho fixo -->
    <!-- Cabeçalho fixo -->
-    <header style="position: fixed; top: 0; left: 0; width: 100%; height: 80px; background-color:  #f1f5f9; display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 0 20px;">
+    <header style="
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; /* Alinhamento: flex-start (esquerda), center (centro), flex-end (direita) */
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+">
+    <img
+    src="assets/logo-alves.png"
+    alt="Logo Alves Eletrônicos"
+    style="
+      width: 100%;
+      max-width: 320px; /* Aumenta o tamanho máximo em computadores */
+      height: auto;
+      object-fit: contain;
+      /* Caso queiras mover milimetricamente para o lado ou cima/baixo: */
+      margin-left: 0px; 
+      margin-top: -110px;
+    "
+>
       
-      <img
-        src="/assets/logo-alves.png"
-        alt="Logo Alves Eletrônicos"
-        style="
-          /* --- TAMANHO --- */
-          height: 280px;             /* Ajuste a altura exata aqui */
-          width: auto;              /* Deixe auto para não distorcer a imagem */
-          object-fit: contain;
-          transform: translate(-500px, 1px); /* X: -500px (esquerda) | Y: 15px (baixo) */
-          /* Opcional para ajuste milimétrico de posição */
-          position: relative;
-          top: 0px;                 /* Ajuste fino vertical */
-          left: 0px;                /* Ajuste fino horizontal */
-          
-          
-        "
-      >
   
 
     </header>
